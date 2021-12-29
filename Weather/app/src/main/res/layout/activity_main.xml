@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:padding="10dp"
+    android:textDirection="rtl"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="aaaadfdf"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/thumbnailIcom"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/cityText"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="12Deg"
+        android:textColor="#fff"
+        android:textSize="42sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/cityText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/windText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thumbnailIcom"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:layoutDirection="rtl"
+            android:text="Wind"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cloudText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/windText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layoutDirection="rtl"
+            android:text="Cloud"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pressureText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cloudText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layoutDirection="rtl"
+            android:text="Pressure"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/humidText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pressureText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layoutDirection="rtl"
+            android:text="Humidity"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/riseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/humidText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layoutDirection="rtl"
+            android:text="Sunrise"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/setText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/riseText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layoutDirection="rtl"
+            android:text="Sunset"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/updateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setText"
+            android:layout_centerHorizontal="true"
+            android:layoutDirection="rtl"
+            android:text="Last Updated"
+            android:textColor="#fff"
+            android:textDirection="rtl"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible" />
+
+
+</RelativeLayout>
